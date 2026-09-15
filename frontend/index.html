@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>MNIST Digit Classifier</title>
+<style>
+  body { font-family: sans-serif; text-align: center; margin-top: 40px; }
+  canvas { border: 2px solid #333; background: black; cursor: crosshair; }
+  #result { font-size: 24px; margin-top: 20px; }
+  button { margin: 10px; padding: 8px 16px; font-size: 16px; }
+</style>
+</head>
+<body>
+  <h1>Draw a digit (0–9)</h1>
+  <canvas id="canvas" width="280" height="280"></canvas>
+  <br />
+  <button id="predictBtn">Predict</button>
+  <button id="clearBtn">Clear</button>
+  <div id="result">Prediction: —</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
