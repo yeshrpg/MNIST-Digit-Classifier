@@ -41,7 +41,7 @@ document.getElementById("predictBtn").addEventListener("click", async () => {
     const formData = new FormData();
     formData.append("file", blob, "digit.png");
 
-    const res = await fetch("https://mnist-digit-classifier-backend.onrender.com", {
+    const res = await fetch("https://mnist-digit-classifier-backend.onrender.com/predict", {
       method: "POST",
       body: formData,
     });
