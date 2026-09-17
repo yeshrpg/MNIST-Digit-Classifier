@@ -110,4 +110,6 @@ Full planning documentation is in `/docs`:
 
 ## Author
 
-Built by [yeshrpg](https://github.com/yeshrpg) as an internship-ready, production-style ML deployment project.
+Built by [yeshrpg](https://github.com/yeshrpg) - **Yeshwanth Reddy P G** as an internship-ready, production-style ML deployment project.
+You can reach out to me through my email - yeshrpg@gmail.com.
+Thank You for viewing.
