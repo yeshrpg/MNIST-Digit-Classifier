@@ -3,6 +3,7 @@
 A handwritten digit classifier that goes beyond a notebook demo: a CNN trained to **99.14% test accuracy**, served through a production FastAPI backend, containerized with Docker, and connected to a live canvas-based frontend — fully deployed and publicly usable.
 
 **Live demo:** https://mnist-digit-classifier-nu.vercel.app
+
 **API docs (Swagger):** https://mnist-digit-classifier-backend.onrender.com/docs
 
 ---
@@ -23,11 +24,11 @@ Most MNIST projects stop at `model.fit()` and a confusion matrix in a Jupyter ce
 ## Architecture
 
 ```
-┌─────────────────────┐         HTTPS POST /predict        ┌──────────────────────────┐
-│   Frontend (Vercel)  │ ──────────────────────────────────▶ │  Backend (Render, Docker) │
-│  HTML5 Canvas + JS   │                                     │  FastAPI + Pydantic      │
-│  draw → base64 image │ ◀────────────────────────────────── │  TensorFlow/Keras CNN     │
-└─────────────────────┘         JSON: {digit, confidence}    └──────────────────────────┘
+┌─────────────────────┐         HTTPS POST /predict           ┌──────────────────────────┐
+│   Frontend (Vercel) │ ──────────────────────────────────▶  │  Backend (Render, Docker) │
+│  HTML5 Canvas + JS  │                                       │  FastAPI + Pydantic      │
+│  draw → base64 image│ ◀──────────────────────────────────  │  TensorFlow/Keras CNN     │
+└─────────────────────┘         JSON: {digit, confidence}     └──────────────────────────┘
 ```
 
 1. User draws a digit on an HTML5 `<canvas>`.
